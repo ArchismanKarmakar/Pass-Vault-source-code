@@ -1,0 +1,140 @@
+PassVault - Copy (2) - Copy copy/
+┣ PassVault/
+┃ ┣ bin/
+┃ ┃ ┣ bin/
+┃ ┃ ┃ ┗ data_pro_bak.accdb
+┃ ┃ ┣ Release/
+┃ ┃ ┃ ┣ data_pro_bak.accdb
+┃ ┃ ┃ ┣ ECVyXE4EB972ApWq1hq9530σF3Vn#R6%R.accdb
+┃ ┃ ┃ ┗ Vn#RVypWq1hqX6%R.accdb
+┃ ┃ ┣ Resources/
+┃ ┃ ┃ ┣ AccessDatabaseEngine.exe
+┃ ┃ ┃ ┣ data_pro_bak.accdb
+┃ ┃ ┃ ┣ h;Y!e1!sxg;~dV!&hpmk6.accdb
+┃ ┃ ┃ ┗ ndp48-devpack-enu.exe
+┃ ┃ ┣ data_pro_bak.accdb
+┃ ┃ ┣ ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48
+┃ ┃ ┣ Pass Vault 21H2.html
+┃ ┃ ┣ PassVault.exe
+┃ ┃ ┣ PassVault.exe.config
+┃ ┃ ┣ PassVault.pdb
+┃ ┃ ┣ PassVault.vshost.exe
+┃ ┃ ┣ PassVault.vshost.exe.config
+┃ ┃ ┣ PassVault.vshost.exe.manifest
+┃ ┃ ┗ PassVault.xml
+┃ ┣ main/
+┃ ┃ ┣ winAnimate.vb
+┃ ┃ ┗ WinDP.vb
+┃ ┣ My Project/
+┃ ┃ ┣ app.manifest
+┃ ┃ ┣ Application.Designer.vb
+┃ ┃ ┣ Application.myapp
+┃ ┃ ┣ AssemblyInfo.vb
+┃ ┃ ┣ Resources.Designer.vb
+┃ ┃ ┣ Resources.resx
+┃ ┃ ┣ Settings.Designer.vb
+┃ ┃ ┗ Settings.settings
+┃ ┣ obj/
+┃ ┃ ┗ Debug/
+┃ ┃   ┣ TempPE/
+┃ ┃ ┃ ┃ ┗ My Project.Resources.Designer.vb.dll
+┃ ┃   ┣ .NETFramework,Version=v4.8.AssemblyAttributes.vb
+┃ ┃   ┣ DesignTimeResolveAssemblyReferences.cache
+┃ ┃   ┣ DesignTimeResolveAssemblyReferencesInput.cache
+┃ ┃   ┣ PassVault.Cnew.resources
+┃ ┃   ┣ PassVault.exe
+┃ ┃   ┣ PassVault.g.resources
+┃ ┃   ┣ PassVault.Login.resources
+┃ ┃   ┣ PassVault.Main.resources
+┃ ┃   ┣ PassVault.Main_add.resources
+┃ ┃   ┣ PassVault.Main_Edit.resources
+┃ ┃   ┣ PassVault.Main_View.resources
+┃ ┃   ┣ PassVault.pdb
+┃ ┃   ┣ PassVault.Resources.resources
+┃ ┃   ┣ PassVault.vbproj.AssemblyReference.cache
+┃ ┃   ┣ PassVault.vbproj.FileListAbsolute.txt
+┃ ┃   ┣ PassVault.vbproj.GenerateResource.Cache
+┃ ┃   ┣ PassVault.vbprojResolveAssemblyReference.cache
+┃ ┃   ┗ PassVault.xml
+┃ ┣ Resources/
+┃ ┃ ┣ 2410132047.ico
+┃ ┃ ┣ 2410132047.png
+┃ ┃ ┣ 85013-middle.png
+┃ ┃ ┣ 85098-middle.png
+┃ ┃ ┣ 85103-middle.png
+┃ ┃ ┣ add (1).png
+┃ ┃ ┣ add.png
+┃ ┃ ┣ bitwarden-2752230-2285047.ico
+┃ ┃ ┣ bitwarden-2752230-2285047.png
+┃ ┃ ┣ close (1).png
+┃ ┃ ┣ close.png
+┃ ┃ ┣ data_pro_bak.accdb
+┃ ┃ ┣ document (1).png
+┃ ┃ ┣ document (2).png
+┃ ┃ ┣ document.png
+┃ ┃ ┣ edit (1).png
+┃ ┃ ┣ edit (2).png
+┃ ┃ ┣ edit (3).png
+┃ ┃ ┣ edit.png
+┃ ┃ ┣ exit (1).png
+┃ ┃ ┣ exit.png
+┃ ┃ ┣ exit1.png
+┃ ┃ ┣ exit2.png
+┃ ┃ ┣ h;Y!e1!sxg;~dV!&hpmk6.accdb
+┃ ┃ ┣ h;Y!e1!sxg;~dV!&hpmk6.rtf
+┃ ┃ ┣ h;Y!e1!sxg;~dV!&hpmk6.xlsx
+┃ ┃ ┣ icons8-download-32.png
+┃ ┃ ┣ INFO.bak
+┃ ┃ ┣ INFO.TXT
+┃ ┃ ┣ Pass Vault 21H2.html
+┃ ┃ ┣ password (1).png
+┃ ┃ ┣ password.png
+┃ ┃ ┣ refresh (1).png
+┃ ┃ ┣ refresh.png
+┃ ┃ ┣ trash_can (1).png
+┃ ┃ ┣ trash_can.png
+┃ ┃ ┣ unnamed.png
+┃ ┃ ┣ Vn#RVypWq1hqX6%R.accdb
+┃ ┃ ┣ Vn#RVypWq1hqX6%R.mdb
+┃ ┃ ┣ Vn#RVypWq1hqX6%R.rtf
+┃ ┃ ┗ Vn#RVypWq1hqX6%R.xlsx
+┃ ┣ Service References/
+┃ ┣ 297-2971576_data-policies-and-lock-icon-transparent-background.ico
+┃ ┣ App.config
+┃ ┣ app.manifest
+┃ ┣ ApplicationEvents.vb
+┃ ┣ Cnew.Designer.vb
+┃ ┣ Cnew.resx
+┃ ┣ Cnew.vb
+┃ ┣ ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48
+┃ ┣ key_file_name.pfx
+┃ ┣ key_file_pvs2.pfx
+┃ ┣ Login.Designer.vb
+┃ ┣ Login.resx
+┃ ┣ Login.vb
+┃ ┣ Main.Designer.vb
+┃ ┣ Main.resx
+┃ ┣ Main.vb
+┃ ┣ Main_add.Designer.vb
+┃ ┣ Main_add.resx
+┃ ┣ Main_add.vb
+┃ ┣ Main_Edit.Designer.vb
+┃ ┣ Main_Edit.resx
+┃ ┣ Main_Edit.vb
+┃ ┣ Main_View.Designer.vb
+┃ ┣ Main_View.resx
+┃ ┣ Main_View.vb
+┃ ┣ Module1.vb
+┃ ┣ oljf.pfx
+┃ ┣ PassVault.vbproj
+┃ ┣ PassVault.vbproj.user
+┃ ┣ PassVault_1_TemporaryKey.pfx
+┃ ┣ PVPKCS1.pfx
+┃ ┗ trusted_ca_pvs.pfx
+┣ confused.crproj
+┣ data_pro_bak.accdb
+┣ DigiCert High Assurance EV Root CA.crt
+┣ PassVault.sln
+┣ PassVault_TemporaryKey.pfx
+┣ s3eq6%Rqn1hVr#RVypWn6&X.netsdk48db
+┗ trusted_ca_pvs.pfx
