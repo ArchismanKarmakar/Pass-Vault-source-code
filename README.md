@@ -41,6 +41,8 @@ Get Microsoft Access database engine x86 and .NET Framework 4.8.0 Runtime & SDK 
 
 Install the dependencies, load the project and first job is to disable ClickOnce App Signing, removing security certificates. Now Just set .NET Framework 4.8 & enjoy coding!
 
+```NOTE:``` Please check out the File_Tree_View.txt file to get some idea about the file structure and contents of the project.
+
 ## Plugins
 
 ```Empty```
