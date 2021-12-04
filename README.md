@@ -12,32 +12,26 @@
 - Microsoft DOT NET SDK & Runtime 4.8
 - Visual Studio (2015 or higher)
 
-## Setting Up
-
-
-
-# 
-# 
 ## ISSUES
-- ##### Multiple User accounts not available. Add feature for setting up Multiple User accounts.```Hard```
-- ##### Encryption key is applied in code. Reverse engineering can reveal the key. Use DPAPI to securely store keys in user hardware (TPM). ```Extreme```
-- ##### Proper locked backup system for each database.```Hard```
-- ##### The GUI is very bad. Flashing screen is very common. Improve the GUI.```Moderate```
-- ##### Fix the searching of records problem.```Moderate```
+- ##### Multiple User accounts not available. Add feature for setting up Multiple User accounts. ![]() ![](https://img.shields.io/badge/Difficulty-Extreme-red)
+- ##### Encryption key is applied in code. Reverse engineering can reveal the key. Use DPAPI to securely store keys in user hardware (TPM). ![]() ![](https://img.shields.io/badge/Difficulty-Extreme-red)
+- ##### Proper locked backup system for each database. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
+- ##### The GUI is very bad. Flashing screen is very common. Improve the GUI. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
+- ##### Fix the searching of records problem. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
 
 ## Extra Tasks
-- ##### Convert the project to C# and C++ libraries.```Extreme```
-- ##### Add card system for each credential.```Easy```
-- ##### Add a section in left pane that is hidable and add various accessible menus and items there.```Easy```
-- ##### Add a Recycle bin feature there.```Moderate```
-- ##### Add Secure String Input feature.```Easy```
-- ##### Add Virtual Keyboard.```Easy```
-- ##### Add File attachment feature with each record.```Moderate```
-- ##### Add In-build Notes Keeper.```Hard```
-- ##### Add Anti-Tamper Protection of Source code.```Extreme```
-- ##### Use auto compression of files to reduce size.```Extreme```
-- ##### Autofill feature for browsers and other apps.```Hard```
-- ##### Browser & Windows Power Shell Integration.```Moderate```
+- ##### Convert the project to C# and C++ libraries. ![]() ![](https://img.shields.io/badge/Difficulty-Extreme-red)
+- ##### Add card system for each credential. ![]() ![](https://img.shields.io/badge/Difficulty-Easy-green)
+- ##### Add a section in left pane that is hidable and add various accessible menus and items there. ![]() ![](https://img.shields.io/badge/Difficulty-Easy-green)
+- ##### Add a Recycle bin feature there. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
+- ##### Add Secure String Input feature. ![]() ![](https://img.shields.io/badge/Difficulty-Easy-green)
+- ##### Add Virtual Keyboard. ![]() ![](https://img.shields.io/badge/Difficulty-Easy-green)
+- ##### Add File attachment feature with each record. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
+- ##### Add In-build Notes Keeper. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
+- ##### Add Anti-Tamper Protection of Source code. ![]() ![](https://img.shields.io/badge/Difficulty-Extreme-red)
+- ##### Use auto compression of files to reduce size. ![]() ![](https://img.shields.io/badge/Difficulty-Extreme-red)
+- ##### Autofill feature for browsers and other apps. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
+- ##### Browser & Windows Power Shell Integration. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
 
 ## Installation
 
