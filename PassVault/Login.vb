@@ -1,4 +1,4 @@
-﻿Imports System.Data.OleDb
+Imports System.Data.OleDb
 Imports System.Security.Cryptography
 Imports System.Text
 Imports System
@@ -80,17 +80,15 @@ a:
 
         'HaveInternetConnection()
         run_as_admin()
-        AnimateWindow(Me.Handle.ToInt32, CInt(100), AW_BLEND_INT)
         Dim loop1 As Integer
         loop1 = 1
-        Shell("attrib ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48 -s -r -a -h")
-        Shell("attrib ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48 -s -r -a -h")
+        Shell("attrib ..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48 -s -r -a -h")
+        Shell("attrib ..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48 -s -r -a -h")
         first_run()
-        'Shell("attrib ..\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48 -r -s -a")
+        'Shell("attrib ..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48 -r -s -a")
         'speechsynth.Speak("Hello Aritra!")
 
-        'Shell("attrib ..\Vn#RVypWq1hqX6%R.netsdk48 +h")
-        Button1.Enabled = False
+        'Shell("attrib ..\netfx\Vn#RVypWq1hqX6%R.netsdk48 +h")
     End Sub
 
     Private Sub UsernameTextBox_TextChanged(sender As Object, e As EventArgs) Handles UsernameTextBox.TextChanged
@@ -104,7 +102,7 @@ a:
         Dim SaltValue As String = "E5FCA791CDF72C86"
         Dim EncryptionKey As String = "FBEA05D036B03D13B1CFDFBD961DF9753BB77589840D7DE7"
         Dim plainFilePath As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) & "\Temp\Vn#RVypWq1hqX6%R.netcon48"
-        Dim encryptedFilePath As String = "ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48"
+        Dim encryptedFilePath As String = "..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48"
         Dim passwordIterations As Integer = 1000
         Dim initVector As String = "CE4EB972A9530σF3" '"C359AF7295506C57"
         Dim initVectorBytes As Byte() = Encoding.ASCII.GetBytes(initVector)
@@ -128,7 +126,7 @@ a:
         Dim SaltValue As String = "E5FCA791CDF72C86"
         Dim DecryptionKey As String = "FBEA05D036B03D13B1CFDFBD961DF9753BB77589840D7DE7" '"6D0D40D7FFBD961753BEA08CDF9375BB98FDD13B1B357E7"
         Dim plainFilePath As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) & "\Temp\Vn#RVypWq1hqX6%R.netcon48"
-        Dim encryptedFilePath As String = "ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48"
+        Dim encryptedFilePath As String = "..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48"
         Dim passwordIterations As Integer = 1000
 
         Dim initVector As String = "CE4EB972A9530σF3" '"79F3CA230706AC32F59C95955E4EB957"
@@ -187,7 +185,7 @@ a:
 
         Dim opt As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) & "\Microsoft\NET_FA\.com_microsoftVS_cred_live\s3eq6%Rqn1hVr#RVypWn6&X.netf48"
 
-        If Not File.Exists("ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48") Then
+        If Not File.Exists("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48") Then
 
             If Directory.Exists(user_appdpath1) And File.Exists(user_appdpath1_db1) Then
                 opt = user_appdpath1_db1
@@ -205,9 +203,9 @@ a:
             System.IO.Directory.CreateDirectory(user_appdpath1)
         End If
 
-        If File.Exists("ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48") Then
-            Shell("attrib ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48 -s -r -h -a")
-            'ile.SetAttributes("..\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", IO.FileAttributes.Normal)
+        If File.Exists("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48") Then
+            Shell("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48 -s -r -h -a")
+            'ile.SetAttributes("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", IO.FileAttributes.Normal)
             Call DecryptFile()
             Return Nothing
             Exit Function
@@ -217,11 +215,11 @@ a:
 
             'My.Computer.FileSystem.CopyFile(user_appdpath1_db1, "..\netfx")
             Try
-                'Dim writeRes0 As New FileStream("..\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", FileMode.Create)
+                'Dim writeRes0 As New FileStream("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", FileMode.Create)
                 'Dim binWrite0 As New BinaryWriter(writeRes0)
                 'binWrite0.Write(opt)
                 'binWrite0.Close()
-                binreadwrite_create(opt, "ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48")
+                binreadwrite_create(opt, "..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48")
             Catch
                 Application.Exit()
             End Try
@@ -231,7 +229,7 @@ a:
             'Application.Exit()
             'End If
             'ElseIf MsgBoxResult.No Then
-            'Dim writeRes1 As New FileStream("..\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", FileMode.Create)
+            'Dim writeRes1 As New FileStream("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", FileMode.Create)
             'Dim binWrite1 As New BinaryWriter(writeRes1)
             'binWrite1.Write(My.Resources.data_pro_bak)
             '    binWrite1.Close()
@@ -261,13 +259,13 @@ a:
 
         'End If
 
-        'Dim writeRes0 As New FileStream("..\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", FileMode.Create)
+        'Dim writeRes0 As New FileStream("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", FileMode.Create)
         'Dim binWrite0 As New BinaryWriter(writeRes0)
         'binWrite0.Write(My.Resources.data_pro_bak)
         'binWrite0.Close()
-        Call binreadwrite_create(My.Resources.data_pro_bak, "ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48")
-        Shell("ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48 -r -s -h -a")
-        'File.SetAttributes("..\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", IO.FileAttributes.Normal)
+        Call binreadwrite_create(My.Resources.data_pro_bak, "..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48")
+        Shell("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48 -r -s -h -a")
+        'File.SetAttributes("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", IO.FileAttributes.Normal)
         'Dim writeRes1 As New FileStream(user_appdpath1_db1, FileMode.Create)
         'Dim binWrite1 As New BinaryWriter(writeRes1)
         'binWrite1.Write(My.Resources.data_pro_bak)
@@ -360,13 +358,13 @@ a:
             'Dim user_appdpath1_db1 As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) & "\Microsoft\NET_FA\.com_microsoftVS_cred_live\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netf48"
             'Dim writeStream = New FileStream(user_appdpath1_db1, FileMode.Create)
             'Dim writeBinay As New BinaryWriter(writeStream)
-            'writeBinay.Write("..\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48")
+            'writeBinay.Write("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48")
             'writeBinay.Close()
             'System.IO.File.SetLastAccessTime(user_appdpath1_db1, Date.Now)
-            'Dim byts = File.ReadAllBytes("..\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48")
+            'Dim byts = File.ReadAllBytes("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48")
             'File.WriteAllBytes(user_appdpath1_db1, byts)
-            binreadwrite_create("ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", user_appdpath1_db1)
-            'Dim fs1 As FileStream = New FileStream("..\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.accdb", FileMode.Open, FileAccess.Read)
+            binreadwrite_create("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", user_appdpath1_db1)
+            'Dim fs1 As FileStream = New FileStream("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.accdb", FileMode.Open, FileAccess.Read)
             'Dim fs2 As FileStream = New FileStream(user_appdpath1_db1, FileMode.Create, FileAccess.Write)
             'Dim brr As BinaryReader = New BinaryReader(fs1)
             'Dim brw As BinaryWriter = New BinaryWriter(fs2)
@@ -380,7 +378,7 @@ a:
         'Try
         'Dim writeRes2 As New FileStream(user_appdpath2_db1, FileMode.Create)
         'Dim binWrite2 As New BinaryWriter(writeRes2)
-        'binWrite2.Write("..\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48")
+        'binWrite2.Write("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48")
         'binWrite2.Close()
         'System.IO.File.SetLastAccessTime(user_appdpath2_db1, Date.Now)
 
@@ -400,14 +398,14 @@ a:
 
         File.Delete(work_dir)
 
-        Shell("attrib ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48 +r +s +h +a")
-        System.IO.File.SetLastWriteTime("ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", Date.Now)
-        System.IO.File.SetLastAccessTime("ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", Date.Now)
+        Shell("attrib ..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48 +r +s +h +a")
+        System.IO.File.SetLastWriteTime("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", Date.Now)
+        System.IO.File.SetLastAccessTime("..\netfx\ECVyXE4EB972ApWq1hq9530sF3Vn#R6%R.netsdk48", Date.Now)
         Return Nothing
     End Function
 
     Private Sub Login_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-        AnimateWindow(Me.Handle.ToInt32, CInt(200), AW_BLEND_INT Or AW_HIDE_INT)
+
     End Sub
 
     Public Shared Function binreadwrite_create(dataPath, outpath)
@@ -451,11 +449,6 @@ a:
         Me.Hide()
         UsernameTextBox.Clear()
         PasswordTextBox.Clear()
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim path = System.AppDomain.CurrentDomain.BaseDirectory.ToString
-        System.Diagnostics.Process.Start(path & "Pass Vault 21H2.html")
     End Sub
 End Class
 
