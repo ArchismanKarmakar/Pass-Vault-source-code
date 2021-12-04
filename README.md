@@ -46,7 +46,8 @@ Install the dependencies, load the project and first job is to disable ClickOnce
 ### Editing the Password Database File
 
 All the databases are ACCDB files only the extensions have been changed. The Passwords for the database files are listed below (I don't remember in which files I applied it, but I kept these 2 passwords and applied only these 2): 
-```CONFIDENTIAL:``` 
+
+#### ```CONFIDENTIAL:``` 
 1: tmzS~u%sw<n6&rs3e^9&
 2: cw?b5j_oS<gUg3u_2wSl
 
