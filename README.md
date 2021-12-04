@@ -17,7 +17,7 @@
 - ##### Encryption key is applied in code. Reverse engineering can reveal the key. Use DPAPI to securely store keys in user hardware (TPM). ![]() ![](https://img.shields.io/badge/Difficulty-Extreme-red)
 - ##### Proper locked backup system for each database. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
 - ##### The GUI is very bad. Flashing screen is very common. Improve the GUI. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
-- ##### Fix the searching of records problem. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
+- ##### Fix the searching of records problem. ![]() ![](https://img.shields.io/badge/Difficulty-Hard-orange)
 
 ## Extra Tasks
 - ##### Convert the project to C# and C++ libraries. ![]() ![](https://img.shields.io/badge/Difficulty-Extreme-red)
@@ -26,12 +26,12 @@
 - ##### Add a Recycle bin feature there. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
 - ##### Add Secure String Input feature. ![]() ![](https://img.shields.io/badge/Difficulty-Easy-green)
 - ##### Add Virtual Keyboard. ![]() ![](https://img.shields.io/badge/Difficulty-Easy-green)
-- ##### Add File attachment feature with each record. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
+- ##### Add File attachment feature with each record. ![]() ![](https://img.shields.io/badge/Difficulty-Hard-orange)
 - ##### Add In-build Notes Keeper. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
 - ##### Add Anti-Tamper Protection of Source code. ![]() ![](https://img.shields.io/badge/Difficulty-Extreme-red)
-- ##### Use auto compression of files to reduce size. ![]() ![](https://img.shields.io/badge/Difficulty-Extreme-red)
+- ##### Use auto compression of files to reduce size. ![]() ![](https://img.shields.io/badge/Difficulty-Hard-orange)
 - ##### Autofill feature for browsers and other apps. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
-- ##### Browser & Windows Power Shell Integration. ![]() ![](https://img.shields.io/badge/Difficulty-Moderate-yellow)
+- ##### Browser & Windows Power Shell Integration. ![]() ![](https://img.shields.io/badge/Difficulty-Hard-orange)
 
 ## Installation
 
