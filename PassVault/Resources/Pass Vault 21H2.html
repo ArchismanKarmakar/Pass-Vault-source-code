@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Rice-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://community.bitwarden.com/uploads/default/original/2X/9/91b8778936e5197e8f351a4ebfcf8eaf0c095581.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.apkmirror.com/wp-content/uploads/2021/03/86/604d3d46a2a0b.png" type="image/x-icon">
+    <title>Pass Vault 21H2 Release Notes</title>
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+        scroll-snap-type: mandatory;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .aio{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /*position: relative;*/
+        /*top: 50px;;*/
+        margin:0;
+        padding:0;
+        
+        height:100%;
+        top: 120px;
+        /*padding:10px;*/
+        padding-bottom:60px;
+        position: relative;
+    }
+    .header{
+        position:absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        left: 0;
+        top: 0;
+        width: 100%;
+        text-size-adjust: 16px;
+        font-size: 18px;
+        padding: 3px;
+        /*background-color: rgb(255, 255, 255);*/
+        /*background-color: rgb(51, 51, 51);*/
+        background-color: rgb(27, 95, 168);
+        color: rgb(97,97,97);
+
+    }
+
+    .heading1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        text-emphasis:inherit;
+        
+        text-align: justify;
+        color: rgb(27, 95, 168);
+    }
+
+    html{background-color: rgb(255, 255, 255);}
+
+    footer{
+
+        position:fixed;
+        /*position: absolute;*/
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        left: 0px;
+        bottom:0px;
+        width:100%;
+        size: auto;
+        height:auto;
+        text-size-adjust: 18px;
+        /*overflow: hidden;*/
+        font-size: 13px;
+        padding-top: 2px;
+        background-color: rgb(242, 242, 242,0.9);
+        /*background-color: rgb(51, 51, 51);*/
+        /*background-color: rgb(27, 95, 168);*/
+        color: rgb(97,97,97);
+    }
+    .flex-container{
+        display: flex;
+    }
+    .item:hover{
+        /*background-color: rgb(165, 165, 165);*/
+        cursor: pointer;
+        color: rgb(174, 0, 255);
+    }
+
+    .container{
+        margin: 5px;
+   padding-left: 80px;
+   padding-right: 80px;
+   font-size: 16px;
+   text-align: justify;
+   background: rgba(255, 255, 255, 0.7); /* white background with 50% opacity */
+   padding-bottom: 100px;
+    }
+
+    .footer_mail{
+    color: rgb(30,102,182);
+    text-decoration:none;
+    text-decoration-color: transparent;
+    }
+
+    .footer_mail:hover{
+        cursor: pointer;
+        text-decoration: rgb(11, 52, 107);
+        color: rgb(11, 52, 107);
+        text-decoration:underline;
+        /*text-decoration-color: transparent;*/
+        transition-duration: 0.5s;
+    }
+
+    .button {
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  display:inline-block;
+  /*font-size: 16px;*/
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(11, 52, 107);
+}
+
+.button1{
+    background-color: rgb(27, 95, 168);
+    font-size: 22px;
+    border-radius: 200px;
+    right: 10px;
+    position: fixed;
+
+}
+
+.footer_copyright_tag{
+    color: rgb(27, 95, 168);;
+    font-size: 12px;
+    /*border-radius: 200px;*/
+    /*right: 10px;*/
+    /*position: fixed;*/
+    text-align: center;
+
+}
+
+
+/* Style the tab buttons */
+.tablink {
+  background-color: rgb(51,51,51);
+  color: rgb(255, 255, 255);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  position: relative;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: rgb(105, 105, 105);
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: rgb(255, 255, 255);
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+</style>
+
+<script>
+//Get the button:
+mybutton = document.getElementById("button1");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+}
+</script>
+
+
+
+
+<body>
+    <section id="start"><header class="header"><h1 style="color: rgb(255, 255, 255);">Pass Vault 21H2_built_20210615_official_release</h1></header></section>
+
+    <section id="tablink_buttons">
+        <br><br><br><br><br><br>
+        <button class="tablink" onclick="location.href = '../index.html';">Home</button>
+        <button class="tablink" onclick="location.href = '../downloads.html';">Downloads</button>
+        <button class="tablink" onclick="location.href = '../join-us.html';">Join Our Developement Team</button>
+        <button class="tablink" onclick="">this button is disabled</button>
+
+    </section>
+
+    <div class="aio">
+        <div class="container">
+            <article><i style="font-size: 15px; color: rgb(255, 0, 0);">Final 'R' Version Release Date: Unknown;<br>Alpha Version(OBFUSCATED / STABLE) Release Date: Unknown;<br>Beta Version(OBFUSCATED) Release Date: Unknown;<br>Developer Preview Stable Version(Non OBFUSCATED) Release Date: 06.07.2021 07:00PM IST<br>Developer Live Development Version(UNSTABLE / Non OBFUSCATED) Release Date: 15.06.2021 11:00PM IST</i></article>
+
+    <p class="heading1"><b>Welcome to Pass Vault Release Notes</b></p>
+    <article><i style="font-size: 13px;">For best experience please open in Desktop or use Desktop Mode.</i></article>
+
+    <section id="content"><p><h2><b>Content</b></h2></p>
+    <ol><b>
+        <li><a href="#t&c" class="footer_mail">Terms & Condtions</a></li>
+        <li><a href="#usage" class="footer_mail">Usage</a></li>
+        <li><a href="#password-criteria" class="footer_mail">Password Criteria and Encryption</a></li>
+        <li><a href="#disable-internet" class="footer_mail">Why disable internet connection while using??</a></li>
+        <li><a href="#pv-virus-antivirus" class="footer_mail">Pass Vault and Virus AntiVirus -es</a></li>
+        <li><a href="#new-features" class="footer_mail">New Features</a></li>
+        <li><a href="#major-updates" class="footer_mail">Major Updates</a></li>
+        <li><a href="#bug-bugfix" class="footer_mail">Bugs & Bug Fixes</a></li>
+        <li><a href="#upcoming-features" class="footer_mail">Upcoming Features</a></li>
+        <li><a href="#removed-features" class="footer_mail">Removed Features</a></li>
+        <li><a href="#min-system-requirements" class="footer_mail">Minimum System Requirements</a></li>
+        <li><a href="#about-us" class="footer_mail">About Us</a></li>
+        </b>
+    </ol>
+</section>
+    <section id="t&c"><p><h2>Terms & Conditions</h2></p>
+        Pass Vault is a open source program. Pass Vault doesn't guarantee about 100% safety of your credentials. But it can guarantee upto 98%. In case if you find that the system has been breached or your credentials got compromised or if you face any kind of problems then our Developes will definitely help you the best, just feel free to contact them. But the Developes of this program will not we responsible for any kind of problems or cavass you are in, in case if you charge them.
+    
+        <p>No systems are 100% hack proof. What everyone do is that they build another way to stop the crack. So if you find any kind of leaks or ways that can be used by others to break into the system please inform the Development team.</p>
+        <p>If you are a Reloper then you might know all these stuff.</p>
+        <p>If you are interested in improving this program just contact us and after verifying your identity we may allow you to join our Development team.</p>
+    </section>
+    <section id="usage"><p><h2>Usage</h2></p>
+    Pass Vault is a password management program/system that works using Microsoft DotNET Framework 4.8. PassVault uses system generated hash and clock for random cryptography. The US certified AES or Advanced Encryption System as the best way of encrypting passwords. PassVault uses such AES techniques and special algos for encrypting and storing user passwords. PassVault's AI can switch b/w these 3 encrypion algos depending on the user password strength. It uses Windows DPAPI to store the encrypion keys securely in your OS. We will discuss about this in details later.
+    </section>
+    <section id="password-criteria"><p><h2>Password Criteria and Encryption</h2></p>
+        The best password format is "alphabets""ALPHABETS""NUMBER""SPECIAL_CHARS""AlPhAbEtS_&_NuMbErs" and this format can be rearranged into 5! new combinations.
+    </section>
+    <section id="disable-internet"><p><h2>Why disable internet connection while using??</h2></p>
+        This is not silly. It's serious. PassVault saves all user passwords in ACCDB in ultra encrypted form. But that doen't mean that a hacker cannot break the ACCDB file and get the passwords. Don't worry if such things happen then he will get those in encrypted formats & it's guratanted by AES founder that without the encryption code and DES code the encryption cannot be broken. So it's safe. But disabling internet adds an extra security. When PassVault is in use it will unlocks the ACCDB and retreives the data for user and now if your internet is on and a hacker seeks into your screen then what? or let's say someone breaks the connection and deletes all data then? So for extra security always use PassVault disconnecting your LAN port or WiFi.
+    </section>
+    <section id="pv-virus-antivirus"><p><h2>Pass Vault and Virus AntiVirus -es</h2></p>
+        Pass Vault highly recommends to use a AntiVirus software (set to maximum protection level). Kaspersky & Bitdefender are the best AntiVirus software today. But in case you don't have one and your computer is already infected with Backdoors, Ransomwares, Trojans then be cautious about any irregular behaviours and try to get a AntiVirus program fast. PassVault keeps a backup of your data. But to be more safe just keep a backup of the data (zipped/archived with password so that no one can access) manually in your Cloud Backup system. Your machine can be hacked with simple tweaks by anyone, hackers will either generate a backdoor or fake javascript program that will log your key inputs and get your credentials. So always use a AntiVirus program.
+    </section>
+    <section id="new-features"><p><h2>New Features</h2></p>
+        <ol>
+            
+            <li><b>Random Encryption:</b> This version of application has got random encryption of all sections or columns of the database which adds an extra security.</li>
+            <li><b>Back-up System:</b> This version has got a file back-up system that keeps a back-up of all the databases in the secured Windows directory.</li>
+            <li><b>Running from Local Application Data Folder:</b> Now this application keeps the temporary files at the Local application data folder of Windows which is set to NULL after application is closed.</li>
+            <li><b>Shortcut Keys:</b> Many Shortcut keys have been added for execution of many operations.</li>
+        </ol>
+    </section>
+        <section id="major-updates"><p><h2>Major Updates</h2></p>
+        <ol>
+            <li><b>UI change:</b> The new UI is based on Material Theme which gives this application a unique look, comfortable for your eyes, for using in dark rooms as well as in light</li>
+            <li><b>Run As Admin by default:</b> Previously users had to run the application in Administrator mode and that showed a error ("WIN32 Enable Visual Styles Disabled", "WIN32 Access to LocalApplicationData Denied", "WIN32 AccessDatabaseEngine path error",... etc). But now the program runs by default As An Admin and it has no error. All that stuff has been fixed. Access Database Engine has been integrated with the installation file only.</li>
+            <li><b>Custom Control Box:</b> Now the application has got a more secure interface with a custom control box and the window can be moved anywhere.</li>
+        </ol>
+    </section>
+        <section id="bug-bugfix"><p><h2>Bugs & Bug Fixes</h2></p>
+
+        <p><ul>
+            <li><h4>Bugs</h4></li>
+                <ol>
+                    <li>Searching in in the database with criteria like 'URL','Website'...etc doesn't work.</li>
+                    
+                </ol>
+
+            <li><h4>Bug Fixes</h4></li>     
+            <ol>
+                <li><b>Search by ID optimised:</b> Searching in in the database with ID has been fixed and now it works fine and it's extemely responsive</li>
+                <li><b>Poor UI transition optimised:</b> Constant Screen flashes were reported by many users. But now the UI transition has beem optimised and it is way smoother than previous versions.</li>
+                <li><b>Password Shpw/Hide fixed:</b> Users reported that the Show/Hide button for password didn't work and password character wasn't shown. But this feature has been fixed & now it works perfectly.</li>
+                <li><b>Run As Admin said but shows error fixed:</b> Previously users had to run the application in Administrator mode to give access to the LocalApplicationData folder, to use Windows cryptography systems, to modify the database as system admin and to use DatabaseEngine. But that showed a error ("WIN32 Enable Visual Styles Disabled", "WIN32 Access to LocalApplicationData Denied", "WIN32 AccessDatabaseEngine path error",... etc).</li>
+            </ol>
+            
+        </ul></p>
+    </section>
+        <section id="upcoming-features"><p><h2>Upcoming Features</h2></p>
+            <ol>
+                <li>Recycle Bin.</li>
+                <li>Multi-User Account Feature with Secure Identity Keep for Master Password Verification.</li>
+                <li>Storage of encryption keys using Windows DPAPI and TPM 2.0 with core isolation.</li>
+                <li>Multi-Backup System.</li>
+                <li>Manual Encryption keys from user end.</li>
+                <li>File attachment with each record.</li>
+                <li>UI change: Light Mode & Dark Mode.</li>
+                <li>Browser Integration.</li>
+                <li>Single Search instead of having search criteria.</li>
+                <li>Integration with Power Shell.</li>
+                <li>Save a record as a known file type.</li>
+                <li>Save all records in a known file type.</li>
+                <li>Secure String Input.</li>
+                <li>Virtual Keyboard.</li>
+                <li>Disable Key logging and debug.</li>
+                <li>Report Generator.</li>
+                <li>Anti-Tamper Protection of Source code.</li>
+                <li>Anti-Ildasm Protection of Source code.</li>
+                <li>Real Time Protection.</li>
+                <li>Protection from any of the application/program except Pass Vault to read/write into the Database.</li>
+                
+                <li>UWP application for Windows.</li>
+                <li>Encryption for not only credentials but also for any file types and other documents upto a certain size limit.</li>
+                <li>Custom Database.</li>
+                <li>Data Storage in locked archive.</li>
+                <li>Single Instance application for a particular CPU which disables running the program in a Virtual Machine and interfare with user data.</li>
+                <li>Secure Memory Dump on System Crash or App Crash.</li>
+                <li>In-build Notes Keeper.</li>
+                <li>Secure Identity Verification for Forgot Master Password.</li>
+                <li>Easy Data Restore and DPAPI key Restore after formatting or upgrading System or OS.</li>
+                <li>Automatic Resetting Encryption Keys, Database and DPAPI on being compromised.</li>
+                <li>Forgot Password Verification by OTP or Email.</li>
+                <li>Support for multiple DOT NET FRAMEWORKS and DOT NET CORE in one.</li>
+                <li>Custom Database Bitlocking System.</li>
+                <li>Splitting database into multiple encrypted files to reduce lag, reading & writing time.</li>
+                <li>AI based working. [This may take a long time]</li>
+                
+
+            </ol>
+        </section>
+        <section id="removed-features"><p><h2>Removed Features</h2></p>
+        <ol>
+            <li>Viewing of Username, Password, Details, Email, Contact provided, Security Questions, etc disabled in List View. To view them user must select a record and then view everything. This is done to reduce decrypting time while Searching in the List View.</li>
+            <li>Classic View of Database has been removed.</li>
+            <li>Brightness Controller Removed after adding new UI.</li>
+            <li>Search using multiple criteria in multiple text box removed, instead radio buttons have been added for criteria choosing.</li>
+        </ol>
+        </section>
+
+        <section id="min-system-requirements"><p><h2>Minimum System Requirements</h2></p>
+            <ol>
+                <li>CPU: At least a x64 based CPU with atleast 2 cores 2 threads & 512 MHz operational speed with support of TPM 2.0.</li>
+                <li>RAM: At least 512 MB of free System RAM must be available for smooth usage.</li>
+                <li>GPU: At least 32 MB of Dedicated or Integrated GPU Memory must be free for a proper GUI experience.</li>
+                <li>Storage: At least 1.5 GB of free storage is needed (installation on SSD: optional).</li>
+                <li>OS: At least a NT based Windows 32-bit(x86) or 64-bit(x64) OS is needed i.e. Windows 2000, xp, 7, Windows 10, Windows 11 (all mentioned here are NT based only).</li>
+                <li>Display: A display with resolution of at least 1280 x 720 is needed.</li>
+                <li>Internet Connectivity: Not necessary with current version.</li>
+            </ol>
+        </section>
+
+        <section id="about-us"><p><h2>About Us</h2></p>
+            <font face="Segoe UI" size="5px">The Science of Today is the Technology of Tomorrow!</font>
+                <p><a href="https://archi221aritra221.github.io/BlastexWeb/site_update_v2021.2.0.abcdenf4a1/about&contacts.html" class="footer_mail"><b>Blasteoroid Corporation</b></a> is owned by two students, more correctly two engineering aspirants. Blasteoroid has aimed to provide many projects open to public for the technical implementation of them in higher organisation. Blasteoroid has also aimed for public learning or student learning through their main website. Blasteoroid provides content that can be used by researchers to improve technology and also provides new aspects of learning and implementation. Open Source means not open to public but to help public to learn, use and create something new of their own and to get their ideas to improve a company's products for public use worldwide.
+                    </p>
+            </section>
+
+</div></div>
+   
+        <footer>
+
+            <p><b>Email: </b><b><a href="mailto:kbps.10240@gmail.com" class="footer_mail">kbps.10240@gmail.com</a></b></p>
+            
+            <button id="button1" class="button button1" type="submit" onclick="topFunction()"><b>↑</b></button>
+
+                <p>Operational Hours: 08:00 AM to 05:00 PM IST (GMT+05:30)
+            
+                    Toll-free number (Valid for guest calling from within India)
+                    
+                    +1 111-111-1111 ; +1 111-111-1111
+            
+                    </p>
+                    <p>Direct number (Valid for guest calling from outside India)
+                    
+                        NA; +1 111-111-1111
+            
+                        </p>
+                        <p  class="footer_copyright_tag">© Copyright 2021 <b><a href="https://archi221aritra221.github.io/BlastexWeb/site_update_v2021.2.0.abcdenf4a1/about&contacts.html" class="footer_mail">Blasteoroid Corporation.</a></b> All Rights Reserved.</p>
+        </footer>
+</body>
+</html>
